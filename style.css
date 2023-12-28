@@ -1,0 +1,146 @@
+body{
+    margin: 0;
+    background-color: black;
+}
+
+header{
+    display: flex;
+    margin: 0;
+    background: rgb(0,0,0);
+    background: linear-gradient(0deg, rgba(0,0,0,0.5018382352941176) 0%, rgba(11,33,10,0.4290091036414566) 52%, rgba(22, 255, 6, 0.802) 100%);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+}
+.logo{
+    background-image: url(media/rick-morty-.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    width: 380px;
+    border-radius: 65%;
+}
+.logo:hover{
+    transform: scale(1.1);
+    transition-duration: 1s;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 650px;
+    font-size: 25px;
+    padding: 0;
+}
+a{
+    text-decoration: none;
+    color: white;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    letter-spacing: 2px;
+}
+a:hover{
+    filter: drop-shadow(0 0 0.80rem rgb(1, 255, 1));
+}
+
+.personajes-totales{
+    color: white;
+    height: 30px;
+    margin-left: 5%;
+    font-size: 20px;
+}
+.personajes-totales:hover{
+    filter: drop-shadow(0 0 0.80rem rgb(1, 255, 1));
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.contenedor-img{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 32%;
+    width: 100px;
+    height: 100px;
+}
+.contenedor-img img{
+    width: 100px;
+    height: 100px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 40px;
+    padding: 5px;
+    border-radius: 10px;
+    width: 300px;
+    height: 400px;
+    border: 2px solid green;
+    background-color: darkgreen;
+    font-family: sans-serif;
+    font-size: 15px;
+    color: white;
+    text-align: center;
+
+}
+.card:hover{
+    transform: scale(1.05);
+    background-color: rgb(29, 197, 29);
+}
+img{
+    border-radius: 50px;
+}
+
+footer{
+    display: flex;
+    justify-content: right;
+    height: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    font-size: 12px;
+    letter-spacing: 2px;
+    background: linear-gradient(0deg, rgba(0,0,0,0.5018382352941176) 0%, rgba(11,33,10,0.4290091036414566) 52%, rgba(20,167,9,0.015581232492998) 100%);
+}
+
+
+@media (max-width: 860px){
+    header{
+        width: 100%;
+    }
+    .logo{
+        width: 60%;
+        height: 60%;
+        border-radius: 50%;
+    }
+    nav ul{
+        display: flex;
+        flex-wrap: wrap;
+        width: 400px;
+    }
+    .card{
+        margin: 10px;
+    }
+}
+
+@media (max-width: 360px){
+    body{
+        width: 100%;
+    }
+    header{
+        width: 340px;
+    }
+    nav ul{
+        width: 300px;
+    }
+    .container{
+        width: 340px;
+    }
+}
